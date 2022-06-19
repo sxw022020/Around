@@ -30,3 +30,8 @@
         2. 9200
             - Default port of ElasticSearch, to listen to ElasticSearch
 
+6. `chmod 600 config`
+   `chmod 600 gcekey`
+   - to make ONLY the user can access the config and gcekey
+
+7. 

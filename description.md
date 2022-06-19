@@ -6,6 +6,6 @@ Google App Engine (GAE)
 
 Database:
 1. ElasticSearch
-    - For structured data
+    - Non-RDB, for structured data
 2. Google Cloud Storage
     - For files - pictures or videos
