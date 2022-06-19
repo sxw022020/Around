@@ -1,3 +1,31 @@
-Firewall Configuration
+# Firewall Configuration
+    - Firewall rules control incoming or outgoing traffic to an instance. 
 1. Priority
-    - 
+    - Specify the order that a rule will be applied within a network. 
+    - Rules with lower numbers get prioritized first. Default is 1000.
+    - For example:
+        - if there are multiple firewalls in the same machine, one firewall allows opening 8080 port, 
+          another one allows closing 8080 port
+            => firewall who has higher priority will be applied
+
+2. Direction of traffic:
+    - Ingress: limit others visit you via a specific port
+    - Outgress: limit you visit others via a specific port 
+
+3. Action on Match:
+    - Allow: the written port will be allowed, others are not allowed
+    - Deny: the written port will be denied, others will be allowed
+    - Target tags:
+        - Recommend to be the same as name as firewall to avoid manully unnecessary differentiation
+        - the usage of firewall could depend on name or name of target tag, if they are the same, no need to differentiatiate them
+    - IPv4 ranges:
+        - Even if we limit the access via port, we could use IPv4 ranges to do further limitation
+        - 0.0.0.0/0 - no limitation: all ranges can access the port
+
+5. Protocols and Ports
+    - Protocols: TCP
+    - Ports: 
+        1. 8080
+            - During development, we need to rent a virtual machine, 
+        2. 9200
+            - Default port of ElasticSearch, 
