@@ -26,6 +26,7 @@
     - Protocols: TCP
     - Ports: 
         1. 8080
-            - During development, we need to rent a virtual machine, 
+            - During development, we need to rent a virtual machine (Google Compute Engine), to listen to Go service
         2. 9200
-            - Default port of ElasticSearch, 
+            - Default port of ElasticSearch, to listen to ElasticSearch
+
