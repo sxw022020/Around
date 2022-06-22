@@ -32,6 +32,4 @@
 
 6. `chmod 600 config`
    `chmod 600 gcekey`
-   - to make ONLY the user can access the config and gcekey
-
-7. 
+   - to make ONLY the user can access the config and gcekey 
