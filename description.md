@@ -6,6 +6,7 @@ Google App Engine (GAE)
 
 Database:
 1. ElasticSearch
+    - The largest open-source search engine
     - Non-RDB, for structured data
 2. Google Cloud Storage
     - For files - pictures or videos
